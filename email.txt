@@ -1,0 +1,2 @@
+Thank you for your request, it has been approved.
+Please login to $url/login with your email address and the password "$password". More instructions will be provided through the lab portal.

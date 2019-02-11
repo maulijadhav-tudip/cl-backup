@@ -1,0 +1,27 @@
+image: atlassian/default-image:2
+
+pipelines:
+  tags:
+    V*:
+      - step:
+          name: Build and release
+          services:
+            - docker
+          script:
+            - curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+            - unzip awscli-bundle.zip
+            - ./awscli-bundle/install -b ~/bin/aws
+            - export PATH=~/bin:$PATH
+            - eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email)
+
+            - export IMAGE_NAME=$AWS_REGISTRY_URL/cloudspin:$BITBUCKET_TAG
+            - docker build -t $IMAGE_NAME --build-arg USERNAME=$AZURE_USERNAME --build-arg PASSWORD=$AZURE_PASSWORD .
+            - docker push $IMAGE_NAME
+
+            - export IMAGE_NAME=$AWS_REGISTRY_URL/cloudspin-front-end:$BITBUCKET_TAG
+            - docker build -t $IMAGE_NAME ./front-end
+            - docker push $IMAGE_NAME
+
+            - export IMAGE_NAME=$AWS_REGISTRY_URL/cloudspin-mongo-scripts:$BITBUCKET_TAG
+            - docker build -t $IMAGE_NAME ./mongo
+            - docker push $IMAGE_NAME

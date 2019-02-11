@@ -1,0 +1,177 @@
+.header-style {
+  padding-bottom: 3.125em;
+  text-align: center;
+}
+
+.head-style {
+  text-align: center;
+}
+
+.restart-button-style {
+  background-color: #00acdc;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: calc(0.375em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  width: 50%;
+}
+
+.restart-button-style:hover, .restart-button-style.is-hovered {
+  color: white;
+}
+
+.refresh-button-style {
+  background-color: #00acdc;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  width: auto;
+}
+
+.refresh-button-align {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  margin-top: 0.275em;
+}
+
+.display-flex {
+  justify-content: flex-start;
+  display: inline-flex;
+  margin-top: 0.3125em;
+}
+
+.padding {
+  margin-left: 0.625em;
+  height: 36px;
+  max-width: 50%;
+}
+
+.image-style {
+  padding-top: 0.125em;
+}
+
+.pop-up-style {
+  display: inline-flex;
+  padding-top: 2.05em;
+}
+
+.pop-up-padding {
+  padding-right: 0.9375em;
+}
+
+.font-size {
+  font-size: 120%;
+}
+
+.edit-button-style {
+  width: 90%;
+}
+
+.box-margin {
+  margin: 5%;
+}
+
+.div1-style {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  padding-left: 5%;
+}
+
+.div2-style {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  padding-right: 5%;
+}
+
+.right-align {
+  justify-content: flex-end;
+}
+
+.input-width {
+  width: 50%;
+  padding-bottom: 0.625em;
+}
+
+.name-align {
+  margin-left: 4.0625em;
+}
+
+.desc-align {
+  margin-left: 1.25em;
+}
+
+.checkbox-input-align {
+  vertical-align: middle;
+}
+
+.tests-align {
+  padding-left: 0.75em;
+  padding-bottom: 1.25em;
+  display: inline-block;
+}
+
+.checkbox-title-align {
+  padding-left: 2.3125em;
+}
+
+.vmusername-align {
+  padding-right: 20px;
+  padding-top: 0.3125em;
+}
+
+.vmname-align {
+  padding-right: 3.375em;
+  padding-top: 0.3125em;
+}
+
+.vm-imput-padd {
+  margin-bottom: 0.5625em;
+}
+
+.vmpassword-align {
+  padding-right: 1.5625em;
+  padding-top: 0.3125em;
+}
+
+.parameter-align {
+  text-align: center;
+  padding-right: 10.75em;
+  padding-bottom: 0.625em;
+}
+
+.button-position {
+  margin-right: 0.9375em;
+}
+
+.spinner-style {
+  width: 5%;
+  height: auto;
+  position: absolute;
+  top: 15.625em;
+  left: 48%;
+  text-decoration: none !important;
+}
+
+.danger {
+  color: #ff0000;
+  font-size: 1rem;
+}

@@ -1,0 +1,2 @@
+Thank you for your request, it has been approved.
+Please go to https://paloaltonetworks.qwiklabs.com and create an account to access the labs. Please use this one-time token "$token" to access the lab in Qwiklabs.

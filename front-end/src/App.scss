@@ -1,0 +1,29 @@
+@import "bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/functions";
+$header: #00acdc;
+$header-invert: findColorInvert($header);
+
+@import "bulma/sass/utilities/derived-variables";
+$addColors: (
+  "header": (
+    $header,
+    $header-invert
+  )
+);
+$colors: map-merge($colors, $addColors);
+
+.custom-ui {
+  text-align: center;
+  width: 500px;
+  padding: 40px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.23);
+}
+
+.custom-ui > h1 {
+  margin-top: 0;
+}
+
+@import "bulma/bulma.sass";
+@import "bulma-extensions/bulma-switch/dist/css/bulma-switch";
+@import "bulma-extensions/bulma-accordion/dist/css/bulma-accordion";
+@import "flatpickr/dist/themes/material_blue";
