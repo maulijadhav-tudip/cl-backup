@@ -164,7 +164,7 @@ python-dotenv==0.8.2
 python-json-logger==0.1.9
 python3-logstash==0.4.72
 pytz==2018.5
-PyYAML==4.2b4
+PyYAML==5.4
 raven==6.9.0
 requests==2.19.1
 requests-futures==0.9.7
